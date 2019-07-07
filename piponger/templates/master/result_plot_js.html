@@ -109,7 +109,7 @@
         // https://github.com/d3/d3-scale-chromatic/blob/master/README.md
         var color = d3.scaleSequential().interpolator(d3.interpolateOrRd).domain([1,100])
 
-        d3.json('/get_result_plot_json/1').then(function(graph) {
+        d3.json('/get_result_plot_json/{{ master_iteration_id }}').then(function(graph) {
 
             var label = {
                 'nodes': [],
